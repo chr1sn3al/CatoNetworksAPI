@@ -12,5 +12,5 @@ get-command -module CatoNetworksAPI
 ```
 
 # Dependancies
-CatoNetworksAPI Powershell Module is dependant on the PSGraphQL Module
+CatoNetworksAPI Powershell Module is dependant on the PSGraphQL Module.
 For more information on the PSGraphQL module see Project Site https://github.com/anthonyg-1/PSGraphQL
