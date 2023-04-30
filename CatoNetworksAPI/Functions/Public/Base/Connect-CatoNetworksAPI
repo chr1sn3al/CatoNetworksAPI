@@ -1,0 +1,29 @@
+function Connect-CatoNetworksAPI {
+    <#
+      .DESCRIPTION
+       Defines global variables 
+       If you do not define any switches, Connect-CatoNetworksAPI will prompt you for credentials. This is best for an interactive session.
+
+      .PARAMETER ApiKey
+        ApiKey is generated from the Cato Networks Administation Console
+    
+      .PARAMETER AccountID
+        AccountID is located in the URL of the Cato Networks Administration Console (Numeric value following ?$/account/)
+    
+      .EXAMPLE
+        Connect-CatoNetworksAPI -apikey 'de36328dbe3df0bc7d39ff2306e9aesa' -AccountID '2626'
+
+  #>
+    [cmdletbinding()]
+    param(
+        [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelineByPropertyName=$true,position=0,ParameterSetName="ApiKey")]
+        $script:$ApiKey,
+
+        [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelineByPropertyName=$true,position=0,ParameterSetName="AccountID")]
+        $script:$AccountID
+
+    )
+}
+
+
+Export-ModuleMember -Function Connect-CatoNetworksAPI
