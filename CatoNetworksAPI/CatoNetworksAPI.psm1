@@ -25,8 +25,6 @@ if (test-path $FunctionFolder) {
     Write-Error "check path $FunctionFolder exist and whether there is a typo"
 }
 
-disable-CertsCheck
-
 # make convertto-json depth to max 100 defaults
 
 $Script:PSDefaultParameterValues['convertto-json:Depth'] = 100

@@ -16,10 +16,10 @@ function Connect-CatoNetworksAPI {
     [cmdletbinding()]
     param(
         [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelineByPropertyName=$true,position=0,ParameterSetName="ApiKey")]
-        $script:$ApiKey,
+        $script:ApiKey,
 
         [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelineByPropertyName=$true,position=0,ParameterSetName="AccountID")]
-        $script:$AccountID
+        $script:AccountID
 
     )
 }
