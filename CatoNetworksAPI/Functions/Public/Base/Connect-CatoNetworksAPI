@@ -2,7 +2,6 @@ function Connect-CatoNetworksAPI {
     <#
       .DESCRIPTION
        Defines global variables 
-       If you do not define any switches, Connect-CatoNetworksAPI will prompt you for credentials. This is best for an interactive session.
 
       .PARAMETER ApiKey
         ApiKey is generated from the Cato Networks Administation Console
